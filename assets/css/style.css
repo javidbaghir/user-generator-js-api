@@ -1,0 +1,42 @@
+body {
+    @apply bg-gray-200 p-20
+}
+
+.main {
+    @apply relative border mx-auto w-[500px] my-auto rounded-lg bg-white p-7 space-y-9
+}
+
+.photo {
+    @apply  size-[90px] absolute left-40 -top-16;
+}
+
+/* hr {
+    @apply block bg-red-600
+} */
+
+
+img {
+    @apply size-full object-cover rounded-full
+}
+.email {
+    @apply bg-blue-500 p-2 rounded text-white mt-6
+}
+
+.header {
+    @apply flex 
+}
+
+.body-side {
+    @apply flex justify-between
+}
+.items {
+    @apply flex flex-col text-gray-500 text-center
+}
+
+.body-bottom {
+    @apply flex flex-col items-center justify-center
+}
+
+.footer {
+    @apply flex justify-between
+}
