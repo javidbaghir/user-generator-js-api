@@ -14,11 +14,10 @@ const getUserBtn = document.getElementById('get-user-btn')
 const API_URL = "https://randomuser.me/api/"
 
 
-async function getApi () {
+async function getUser () {
 
    const result = await fetch(API_URL)
    const data = await result.json()
-   console.log(data.results[0]);
 
    streetName.textContent = data.results[0].location.street.name
    streetAdd.textContent = `${data.results[0].location.street.number}  ${data.results[0].location.street.name }`
@@ -31,8 +30,6 @@ async function getApi () {
    tel.textContent = data.results[0].cell
    mobile.textContent = data.results[0].phone
    email.textContent = data.results[0].email
- 
-   
 }
 
 getUserBtn.addEventListener('click', function () {

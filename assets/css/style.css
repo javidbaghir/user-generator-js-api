@@ -10,11 +10,6 @@ body {
     @apply  size-[90px] absolute left-40 -top-16;
 }
 
-/* hr {
-    @apply block bg-red-600
-} */
-
-
 img {
     @apply size-full object-cover rounded-full
 }
