@@ -33,5 +33,5 @@ async function getUser () {
 }
 
 getUserBtn.addEventListener('click', function () {
-    getApi()
+    getUser()
 })
